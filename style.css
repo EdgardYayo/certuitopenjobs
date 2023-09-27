@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background: url(./assets/logo.jpg);
+    background-position: right;
+}
+.info-box {
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 2px 0 black;
+    background: rgba(207, 207, 207, 0.6);
+    transition: all ease-in-out 300ms;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+    background: white;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    width: fit-content;
+    margin: auto;
+    margin-block-end: 20px;
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    margin-block-end: 30px;
+}
+
+img {
+    box-shadow: 10px 10px 50px 10px #C1D72E;
+    width: 80%;
+    border-radius: 10px;
+    animation: changeColor 4s infinite ease-in-out;
+}
+
+@keyframes changeColor {
+    0% {
+        box-shadow: 100px 10px 40px 10px #C1D72E;
+    }
+
+    50% {
+        box-shadow: -100px 10px 40px 10px #007db1;
+    }
+
+    100% {
+        box-shadow: 100px 10px 40px 10px #C1D72E;
+    }
+}
